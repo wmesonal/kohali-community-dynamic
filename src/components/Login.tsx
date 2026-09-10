@@ -135,7 +135,8 @@ export function LoginPage() {
   }
 
 
-  const API_PATH = import.meta.env.VITE_API_PATH;
+  // const API_PATH = import.meta.env.VITE_API_PATH;
+  const API_PATH = import.meta.env.VITE_LIVE_API_PATH;
   async function handleAdminLogin() {
     if (!adminValid || isLoading) return;
     setIsLoading(true);
